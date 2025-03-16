@@ -21,18 +21,27 @@
 // let color: Color = Color.Green;
 // console.log(color); // Output: GREEN
 // Any,Unknown, Void & More
-var value = 5;
-value = "hello";
-value = true;
-var value = 5;
-if (typeof value === 'string') {
-    console.log(value.toUpperCase()); // Safe to use value as a string
-}
-function greet(name) {
-    console.log("Hello, ".concat(name, "!"));
-}
-greet('Code Ninja');
-function Abcd() {
-    while (true) { }
-}
-Abcd();
+// let value: any = 5;
+// value = "hello";
+// value = true;
+// let value: unknown = 5;
+// if (typeof value === 'string') {
+//    console.log(value.toUpperCase()); // Safe to use value as a string
+// }
+// function greet(name: string): void {
+//    console.log(`Hello, ${name}!`);
+// }
+// greet('Code Ninja');
+// function Abcd(): never {
+//    while (true) {}
+// }
+// Abcd();
+// inference & Annotation
+// Inference
+var inferredNumber = 10;
+// Annotation
+var annotatedNumber = 10;
+var annotate = function (a, b) {
+    console.log(a, b);
+};
+annotate('HImel', 18);

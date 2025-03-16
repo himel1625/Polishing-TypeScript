@@ -27,20 +27,30 @@
 
 // Any,Unknown, Void & More
 
-let value: any = 5;
-value = "hello";
-value = true;
+// let value: any = 5;
+// value = "hello";
+// value = true;
 
-let value: unknown = 5;
-if (typeof value === 'string') {
-   console.log(value.toUpperCase()); // Safe to use value as a string
-}
-function greet(name: string): void {
-   console.log(`Hello, ${name}!`);
-}
-greet('Code Ninja');
+// let value: unknown = 5;
+// if (typeof value === 'string') {
+//    console.log(value.toUpperCase()); // Safe to use value as a string
+// }
+// function greet(name: string): void {
+//    console.log(`Hello, ${name}!`);
+// }
+// greet('Code Ninja');
 
-function Abcd(): never {
-   while (true) {}
-}
-Abcd();
+// function Abcd(): never {
+//    while (true) {}
+// }
+// Abcd();
+
+// inference & Annotation
+// Inference
+let inferredNumber = 10;
+// Annotation
+let annotatedNumber: number = 10;
+const annotate = (a: String, b: number): void => {
+   console.log(a, b);
+};
+annotate('HImel', 18);
