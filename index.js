@@ -1,14 +1,23 @@
 // console.log('Hello TypeScript');
 // Arrays
-var arr = [1, 2, 3, 4, 5];
-console.log(arr);
-var arr = [54, 654, 51, 5, 4, 54, 5];
-console.log(arr);
+// const arr: Array<number> = [1, 2, 3, 4, 5];
+// console.log(arr);
+// const arr: number[] = [54, 654, 51, 5, 4, 54, 5];
+// console.log(arr);
 //Tuples
-var arr = ['Himel', 18];
-console.log(arr);
-var arrs = {
-    id: 2342,
-    Name: 'Himel',
-};
-console.log(arrs);
+// let arr: [string, number] = ['Himel', 18];
+// console.log(arr);
+// const arrs: { id: Number; Name: string } = {
+//    id: 2342,
+//    Name: 'Himel',
+// };
+// console.log(arrs);
+// Enums
+var Color;
+(function (Color) {
+    Color["Red"] = "RED";
+    Color["Green"] = "GREEN";
+    Color["Blue"] = "BLUE";
+})(Color || (Color = {}));
+var color = Color.Green;
+console.log(color); // Output: GREEN
