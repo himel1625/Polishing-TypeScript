@@ -16,11 +16,31 @@
 // console.log(arrs);
 
 // Enums
-enum Color {
-   Red = 'RED',
-   Green = 'GREEN',
-   Blue = 'BLUE',
-}
+// enum Color {
+//    Red = 'RED',
+//    Green = 'GREEN',
+//    Blue = 'BLUE',
+// }
 
-let color: Color = Color.Green;
-console.log(color); // Output: GREEN
+// let color: Color = Color.Green;
+// console.log(color); // Output: GREEN
+
+// Any,Unknown, Void & More
+
+let value: any = 5;
+value = "hello";
+value = true;
+
+let value: unknown = 5;
+if (typeof value === 'string') {
+   console.log(value.toUpperCase()); // Safe to use value as a string
+}
+function greet(name: string): void {
+   console.log(`Hello, ${name}!`);
+}
+greet('Code Ninja');
+
+function Abcd(): never {
+   while (true) {}
+}
+Abcd();
