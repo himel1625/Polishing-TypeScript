@@ -47,10 +47,23 @@
 
 // inference & Annotation
 // Inference
-let inferredNumber = 10;
-// Annotation
-let annotatedNumber: number = 10;
-const annotate = (a: String, b: number): void => {
-   console.log(a, b);
+// let inferredNumber = 10;
+// // Annotation
+// let annotatedNumber: number = 10;
+// const annotate = (a: String, b: number): void => {
+//    console.log(a, b);
+// };
+// annotate('HImel', 18);
+
+//  Inference & Type Aliases
+interface User {
+   name: string;
+   age: number;
+   status: boolean;
+   Loading?: undefined;
+}
+const numberOFUsers = (data: User): void => {
+   console.log(data);
 };
-annotate('HImel', 18);
+// Correct usage
+numberOFUsers({ name: 'Himel', age: 18, status: true, Loading: undefined });
