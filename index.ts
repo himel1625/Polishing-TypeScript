@@ -56,14 +56,29 @@
 // annotate('HImel', 18);
 
 //  Inference & Type Aliases
-interface User {
+// interface User {
+//    name: string;
+//    age: number;
+//    status: boolean;
+//    Loading?: undefined;
+// }
+// const numberOFUsers = (data: User): void => {
+//    console.log(data);
+// };
+// // Correct usage
+// numberOFUsers({ name: 'Himel', age: 18, status: true, Loading: undefined });
+
+
+type User = {
    name: string;
    age: number;
    status: boolean;
    Loading?: undefined;
-}
+};
+
 const numberOFUsers = (data: User): void => {
    console.log(data);
 };
+
 // Correct usage
 numberOFUsers({ name: 'Himel', age: 18, status: true, Loading: undefined });
